@@ -33,28 +33,32 @@
 <body>
 
 	<header id="home">
-		<botton id="eTmenu" type="button">Menu</botton>
-		<div class="container">
-			<div class="box">
-				<img src="img/me.png" alt="">
-				<div class="box-content">
-					<h1>HELLO</h1>
-					<h2>I’m eTatev</h2>
-					<h4>Front End Developer</h4>
+		<div class="container-fluid">
+			<nav id="eTmenu"> <!--add show-->
+				<button type="button" class="open-menu-bar"> <!--when eTmenu have show class then add active class-->
+					<span class="tree-btn-is"></span>
+				</button>
+
+				<ul class="menu-bar">
+					<li><a href="#home">HOME</a></li>
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#portfolio">PORTFOLIO</a></li>
+					<li><a href="#contact">CONTACT</a></li>
+				</ul>
+			</nav>
+
+			<div class="container row">
+				<div class="box">
+					<img src="img/me.png" alt="">
+					<div class="box-content">
+						<h1>HELLO</h1>
+						<h2>I’m eTatev</h2>
+						<h4>Front End Developer</h4>
+					</div>
 				</div>
 			</div>
 		</div>
 	</header>
-
-
-	<nav class="container">
-		<ul>
-			<li><a href="#home">HOME</a></li>
-			<li><a href="#about">ABOUT</a></li>
-			<li><a href="#portfolio">PORTFOLIO</a></li>
-			<li><a href="#contact">CONTACT</a></li>
-		</ul>
-	</nav>
 	
 	<main class="container">
 		<article id="about" class="content about-content">
