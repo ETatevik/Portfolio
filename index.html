@@ -65,10 +65,10 @@
 			<section>
 				<h3>ABOUT</h3>
 				<div class="row">
-					<div>
+					<div class="col-about">
 						<img src="img/me2.png" alt="">
 					</div>
-					<div>
+					<div class="col-about">
 						<p>I love to work and study. Learning something new from them, I am always ready. I am quick to orient myself in any situation. I am finishing my tasks. I love punctuality and try to be punctual myself. I love good people and I try to be a good person myself.</p>
 					</div>
 				</div>
@@ -76,9 +76,8 @@
 		</article>
 
 		<article class="content resume-content">
-			<section>
-				<h5>If you want to know more about me, then download my resume</h5>
-				<a href="#" download>Resume</a>
+			<section class="container-fluid">
+				<h5>If you want to know more about me, then download my <a href="img/ResumeEng.pdf" download title="Download my resume"><i class="fas fa-download"></i></a> resume</h5>
 			</section>
 		</article>
 
@@ -87,72 +86,119 @@
 				<h3>PORTFOLIO</h3>
 				<div class="row">
 					<div class="col-port">
-						<a target="_blank" href="http://etatev.000webhostapp.com/graph.test/">
+						<a class="port-box" target="_blank" href="http://etatev.000webhostapp.com/graph.test/">
 							<img src="img/pf-graph.png" alt="">
-							<p>Graph - Visual Communications</p>
+							<p><span>Graph - Visual Communications</span></p>
 						</a>
 					</div>
 					<div class="col-port">
-						<a target="_blank" href="http://etatev.000webhostapp.com/football/">
+						<a class="port-box" target="_blank" href="http://etatev.000webhostapp.com/football/">
 							<img src="img/pf-pcfootball.png" alt="">
-							<p>PCFootball</p>
+							<p><span>PCFootball</span></p>
 						</a>
 					</div>
 					<div class="col-port">
-						<a target="_blank" href="https://www.gaspropane.ml/">
+						<a class="port-box" target="_blank" href="https://www.gaspropane.ml/">
 							<img src="img/pf-gasprom.png" alt="">
-							<p>Gaspropane</p>
+							<p><span>Gaspropane</span></p>
 						</a>
 					</div>
 					<div class="col-port">
-						<a target="_blank" href="http://etatev.000webhostapp.com/dueXv1/">
+						<a class="port-box" target="_blank" href="http://etatev.000webhostapp.com/dueXv1/">
 							<img src="img/pf-duexv1.png" alt="">
-							<p>Due-X v1</p>
+							<p><span>Due-X v1</span></p>
 						</a>
 					</div>
 				</div>
-				<button type="button" id="moreProjects">More</button>
-			</section>
-		</article>
-
-		<article id="contact" class="content contact-content">
-			<section>
-				<h3>CONTACT</h3>
 				<div class="row">
-					<div class="col-contact">
-						<ul>
-							<li><a href="tel:37494181944">094 18 19 44</a></li>
-							<li><a href="mailto:barev.tatevik@gmail.com">barev.tatevik@gmail.com</a></li>
-						</ul>
+					<div class="col-port">
+						<a class="port-box" target="_blank" href="https://etatev.000webhostapp.com/Museum/admineSide/index.html">
+							<img src="img/pf-audiogid.png" alt="">
+							<p><span>Audiogid</span></p>
+						</a>
 					</div>
-					<div class="col-contact">
-						<ul>
-							<li><a target="_blank" href="https://www.linkedin.com/in/etatev/"><i class="fab fa-linkedin-in"></i></a></li>
-							<li><a target="_blank" href="https://github.com/ETatevik"><i class="fab fa-github"></i></a></li>
-							<li><a target="_blank" href="https://www.facebook.com/tatevik.egiazaryan.75"><i class="fab fa-facebook-f"></i></a></li>
-							<li><a target="_blank" href="https://telegram.im/@eTatev"><i class="fab fa-telegram-plane"></i></a></li>
-						</ul>
+					<div class="col-port">
+						<a class="port-box" target="_blank" href="https://etatev.000webhostapp.com/dueXv2/index.html">
+							<img src="img/pf-duexv2.png" alt="">
+							<p><span>Due-X v2</span></p>
+						</a>
+					</div>
+					<div class="col-port">
+						<a class="port-box" target="_blank" href="https://etatev.000webhostapp.com/3DHouse/">
+							<img src="img/pf-3dhouse.png" alt="">
+							<p><span>3DHouse</span></p>
+						</a>
+					</div>
+					<div class="col-port">
+						<a class="port-box" target="_blank" href="http://etatev.000webhostapp.com/neurohub/first-page.html">
+							<img src="img/pf-neuro.png" alt="">
+							<p><span>Neurohub Business Academy</span></p>
+						</a>
 					</div>
 				</div>
+				<div class="row">
+					<div class="col-port">
+						<a class="port-box" target="_blank" href="https://etatev.000webhostapp.com/due-xV2.0.1/index.html">
+							<img src="img/pf-duexv3.png" alt="">
+							<p><span>Due-X LLC</span></p>
+						</a>
+					</div>
+					<div class="col-port">
+						<a class="port-box" target="_blank" href="https://etatev.000webhostapp.com/joomag/">
+							<img src="img/pf-joomag.png" alt="">
+							<p><span>Joomag</span></p>
+						</a>
+					</div>
+				</div>
+				<button type="button" id="moreProjects" title="More"><i class="far fa-plus-square"></i></button>
 			</section>
 		</article>
 	</main>
 
-	<footer class="container">
-		<div class="row">
-			<div class="col-foot">
-				<p>&copy; 2020 eTatev</p>
-				<span>Currently v1.0.2</span>
+	<footer>
+		<div class="container-fluid">
+			<div class="container">
+				<article id="contact" class="content contact-content">
+					<section >
+						<h3>CONTACT</h3>
+						<div class="row">
+							<div class="col-contact">
+								<ul class="off-contact">
+									<li><a href="tel:37494181944"><i class="fas fa-mobile"></i>094 18 19 44</a></li>
+									<li><a href="mailto:barev.tatevik@gmail.com"><i class="fas fa-envelope"></i>barev.tatevik@gmail.com</a></li>
+								</ul>
+							</div>
+							<div class="col-contact">
+								<ul class="soc-pages">
+									<li><a target="_blank" href="https://www.linkedin.com/in/etatev/" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+									<li><a target="_blank" href="https://github.com/ETatevik" title="Github"><i class="fab fa-github"></i></a></li>
+									<li><a target="_blank" href="https://www.facebook.com/tatevik.egiazaryan.75" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+									<li><a target="_blank" href="https://telegram.im/@eTatev" title="Telegram"><i class="fab fa-telegram-plane"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</article>
 			</div>
-			<div class="col-foot">
-				<img src="img/logoW.png" alt="">
-			</div>
-			<div class="col-foot">
-				<ul>
-					<li><a href="#home">HOME</a></li>
-					<li><a href="#about">ABOUT</a></li>
-					<li><a href="#portfolio">PORTFOLIO</a></li>
-				</ul>
+		</div>
+		<div class="container-fluid opacity">
+			<div class="container">
+				<div class="row">
+					<div class="col-foot">
+						<p>&copy; 2020 eTatev</p>
+						<span>Currently v1.0.2</span>
+					</div>
+					<div class="col-foot">
+						<img src="img/logoW.png" alt="">
+					</div>
+					<div class="col-foot">
+						<ul>
+							<li><a href="#home">HOME</a></li>
+							<li><a href="#about">ABOUT</a></li>
+							<li><a href="#portfolio">PORTFOLIO</a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</footer>
