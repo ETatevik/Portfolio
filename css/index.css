@@ -61,11 +61,20 @@ header{
 	background: #333 url('../img/bg.jpg') no-repeat fixed center center;
 	background-size: cover;
 	min-height: 100vh;
+	position: relative;
+}
+
+#particles-js{
+	height: 100vh;
+	width: 100%;
+	position: absolute;
 }
 
 header > .container-fluid{
 	background: linear-gradient(rgba(0, 0, 0, .5), transparent);
 	min-height: inherit;
+	position: relative;
+	z-index: 2;
 }
 
 .box{
@@ -278,6 +287,16 @@ footer > .container-fluid.opacity{
 	color: #6FCF97;
 }
 
+.portfolio-content .row{
+	display: none;
+}
+.portfolio-content .row.show{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
 .port-box{
 	max-width: 350px;
 	height: 250px;
