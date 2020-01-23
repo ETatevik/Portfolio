@@ -1,8 +1,18 @@
-let menu_btn     		 = document.querySelector('.open-menu-bar');
-let menu        		 = document.querySelector('#eTmenu');
-let portfolio_elements 	 = document.querySelectorAll('.portfolio-content .row');
-let more                 = document.querySelector('#moreProjects'); 
-let index_elem           = 0;    
+const menu_btn     		 	 = document.querySelector('.open-menu-bar');
+const menu        		 	 = document.querySelector('#eTmenu');
+const portfolio_elements 	 = document.querySelectorAll('.portfolio-content .row');
+const more                   = document.querySelector('#moreProjects'); 
+let index_elem               = 0;    
+const loading                = document.querySelector('#eTloading');
+
+window.onload = function(){
+	loading.classList.add('hide');
+
+	setTimeout(function(){
+		loading.style.display = 'none';
+	}, 3002);
+}
+
 
 menu_btn.addEventListener('click', showMenu);
 menu.addEventListener('click', closeMenu);

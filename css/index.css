@@ -13,25 +13,28 @@
 }
 
 html {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
+  	scroll-behavior: smooth;
 }
 
 :root {
 	--text-color-1: #f2f2f2;
 }
 
+body{
+  	overflow-x: hidden;
+}
+
 body::-webkit-scrollbar {
-  width: 5px;
+  	width: 5px;
 }
 body::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  	background: #f1f1f1; 
 }
 body::-webkit-scrollbar-thumb {
-  background: #333;
+  	background: #333;
 }
 body::-webkit-scrollbar-thumb:hover {
-  background: #111; 
+  	background: #111; 
 }
 
 .container {
@@ -56,6 +59,88 @@ body::-webkit-scrollbar-thumb:hover {
 .container-fluid{
 	width: 100%;
 	height: 100%;
+}
+
+#eTloading{
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	background: #1D2430;
+	z-index: 1000;
+	text-align: center;
+}
+
+#eTloading.hide{
+	animation: hide_loading 2s 1s linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes hide_loading{
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: 0;
+	}
+}
+
+#eTloading > .row{
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+#eTloading > .row > img{
+	max-width: 496px;
+}
+#eTloading > .row > p{
+	color: var(--text-color-1);
+	font-size: 20px;
+}
+#eTloading > .row > p > span{
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background: var(--text-color-1);
+	margin-left: 5px;
+	position: relative;
+	animation: text_opacity 2.2s linear infinite;
+}
+#eTloading > .row > p > span::after,
+#eTloading > .row > p > span::before{
+	content: '';
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background: var(--text-color-1);
+	animation: text_opacity 2s linear infinite;
+	position: absolute;
+	opacity: 0;
+}
+#eTloading > .row > p > span::after{
+	left: 10px;
+	animation-delay: 1s;
+}
+#eTloading > .row > p > span::before{
+	left: 20px;
+	animation-delay: 2s;
+}
+@keyframes text_opacity{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
 }
 header{
 	background: #333 url('../img/bg.jpg') no-repeat fixed center center;
