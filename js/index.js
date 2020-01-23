@@ -1,3 +1,21 @@
+/* <pre> 
+        |===============
+        ||===========
+        |||=======
+        |||
+        |||
+===================
+   ============= 
+      =======
+        |||
+        |||
+        |||=======
+        ||===========
+        |=============== 
+
+        by eTatev  
+</pre> */
+
 const menu_btn     		 	 = document.querySelector('.open-menu-bar');
 const menu        		 	 = document.querySelector('#eTmenu');
 const portfolio_elements 	 = document.querySelectorAll('.portfolio-content .row');
